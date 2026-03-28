@@ -22,7 +22,7 @@ $isAdmin = [bool]([Security.Principal.WindowsIdentity]::GetCurrent().Groups -mat
 $FilePath = if ($isAdmin) { "$env:SystemRoot\Temp\SMB_Share_$rand.cmd" } else { "$env:TEMP\SMB_Share_$rand.cmd" }
 
 # 下载批处理脚本
-$DownloadURL = 'https://raw.githubusercontent.com/yourusername/yourrepository/main/enable_smb_and_share.cmd'
+$DownloadURL = 'https://raw.githubusercontent.com/Cotton059/Light-Help/refs/heads/main/enable_smb_and_share.cmd'
 
 try {
     $response = Invoke-WebRequest -Uri $DownloadURL -UseBasicParsing
