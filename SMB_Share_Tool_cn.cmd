@@ -1,5 +1,5 @@
 @echo off
-:: 关键：强制 CMD 进入 UTF-8 模式，适配 GitHub 网页保存的编码
+:: 强制使用 UTF-8 环境
 chcp 65001 >nul
 SETLOCAL ENABLEDELAYEDEXPANSION
 
@@ -7,10 +7,10 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&&exit
 cd /d "%~dp0"
 
-:: --- 变量定义（在这里修改你的信息，双引号千万不要删） ---
-set "MY_NAME=光速分享"
-set "MY_YT=www.youtube.com/@光速分享"
-set "MY_GH=github.com/Cotton059/Light-Help"
+:: --- 核心信息定义（为了防乱码，这里使用变量保护） ---
+set "NAME=光速分享"
+set "YT=www.youtube.com/@光速分享"
+set "GH=github.com/Cotton059/Light-Help"
 
 title SMB 1.0 Share Tool
 mode con cols=95 lines=32
@@ -20,99 +20,96 @@ color 0F
 cls
 echo.
 echo   =======================================================================================
-echo   #                 S M B   1 . 0   一 键 共 享 配 置 工 具 (GitHub 远程版)             #
+echo   #                 S M B   1 . 0   Quick Share Tool (CMD Version)                      #
 echo   =======================================================================================
-echo   [ 功能 ] : 开启 SMB 1.0 协议、创建文件夹并配置 Everyone 匿名共享权限
-echo   [ 作者 ] : "%MY_NAME%"
-echo   [ 主页 ] : "%MY_YT%"
-echo   [ 项目 ] : "%MY_GH%"
+echo.
+:: 这里直接输出，不再使用复杂的边框嵌套中文
+echo   [ Auth ] : %NAME%
+echo   [ Home ] : %YT%
+echo   [ Project ] : %GH%
+echo.
+echo   [ Info ] : 正在开启 SMB 1.0 协议并配置 Everyone 匿名共享权限...
 echo   ---------------------------------------------------------------------------------------
 echo.
 
 :: --- 权限检测 ---
-echo   [ 状态检查 ] 正在验证管理员权限...
 net session >nul 2>&1
 if %errorlevel% neq 0 (
     color 0C
-    echo   [ 错误 ] 请右键点击此文件，选择 "以管理员身份运行"！
-    echo.
+    echo   [!] Error: Please run as Administrator!
+    echo       错误：请使用管理员权限运行！
     pause
     exit /b
 )
-echo   [ 状态检查 ] 权限验证通过。
-echo.
 
 :: --- 磁盘扫描 ---
-echo   [ 磁盘列表 ] 正在获取可用驱动器...
+echo   [+] Scanning Drives... 正在获取可用驱动器...
 echo   ---------------------------------------------------------------------------------------
 set counter=1
 for /f "skip=1 tokens=1" %%a in ('wmic logicaldisk get name') do (
     set "item=%%a"
     if not "!item!"=="" (
         set "drive[!counter!]=!item!"
-        echo      [!counter!]  驱动器 !item!
+        echo      [!counter!]  Drive !item!
         set /a counter+=1
     )
 )
 echo   ---------------------------------------------------------------------------------------
 echo.
 
-:: --- 用户输入 ---
-set /p driveChoice="   [?] 请输入数字编号 (1, 2, 3...): "
+set /p driveChoice="   [?] Select Drive Number 请输入数字编号 (1, 2, 3...): "
 set "driveLetter=!drive[%driveChoice%]!"
 
 if "!driveLetter!"=="" (
     color 0C
-    echo   [ 错误 ] 输入无效，程序即将退出。
+    echo   [!] Invalid Choice. 无效输入。
     timeout /t 3 >nul
     exit /b
 )
 
-echo.
-set /p shareName="   [?] 请设置共享文件夹的名称 (例如 ShareData): "
+set /p shareName="   [?] Share Name 请输入共享名称 (e.g. MyShare): "
 set "fullPath=!driveLetter!\!shareName!"
 
 :: --- 执行逻辑 ---
 cls
 echo.
 echo   =======================================================================================
-echo   正在执行部署，请稍后... (步骤 1/4 开启协议通常需要 1-3 分钟)
+echo   Processing... Please wait 1-3 minutes. 正在部署，请稍候...
 echo   =======================================================================================
 echo.
 
-echo   [1/4] 正在启用 SMB 1.0 协议组件...
+echo   [1/4] Enabling SMB 1.0... 正在启用协议...
 dism /online /enable-feature /featurename:SMB1Protocol /all /norestart >nul
 
-echo   [2/4] 正在重启网络共享服务...
+echo   [2/4] Restarting Services... 正在重启服务...
 net stop "lanmanserver" /y >nul 2>&1
 net start "lanmanserver" >nul 2>&1
 
 if not exist "!fullPath!" (
-    echo   [3/4] 正在创建本地文件夹: !fullPath!
+    echo   [3/4] Creating Folder... 正在创建文件夹: !fullPath!
     mkdir "!fullPath!"
 )
-echo         正在配置磁盘 NTFS 权限 (Everyone)...
+echo         Configuring NTFS Permissions... 正在配置权限...
 icacls "!fullPath!" /grant Everyone:(OI)(CI)F /t /q >nul
 
-echo   [4/4] 正在激活局域网共享广播...
+echo   [4/4] Activating Share... 正在开启网络共享...
 net share "!shareName!"="!fullPath!" /GRANT:everyone,FULL /REMARK:"Auto-shared" >nul
 
-:: --- 结果汇报 ---
+:: --- 结果展示 ---
 echo.
 echo   =======================================================================================
 if %errorlevel% equ 0 (
     color 0A
-    echo   [ 成功 ] 共享部署已完成！
+    echo   [ SUCCESS ] Done! 部署成功！
     echo   ---------------------------------------------------------------------------------------
-    echo     - 访问路径: \\%COMPUTERNAME%\!shareName!
-    echo     - 物理路径: !fullPath!
+    echo     - Path 访问路径: \\%COMPUTERNAME%\!shareName!
+    echo     - Local 物理路径: !fullPath!
     echo   ---------------------------------------------------------------------------------------
-    echo   [ 提示 ] 如果这是您第一次开启，请务必【重启电脑】使协议生效。
+    echo     * 提示: 如果是首次开启，请重启电脑以生效。
 ) else (
     color 0C
-    echo   [ 失败 ] 创建共享时遇到错误。
+    echo   [ FAILED ] 部署失败，请检查名称是否冲突。
 )
 echo   =======================================================================================
 echo.
-echo   按任意键结束...
-pause >nul
+pause
