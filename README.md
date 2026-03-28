@@ -16,7 +16,7 @@
 在 **PowerShell 管理员模式** 中运行以下命令：
 
 ```powershell
-iwr -useb [https://raw.githubusercontent.com/Cotton059/Light-Help/main/enable_smb_and_share.ps1](https://raw.githubusercontent.com/Cotton059/Light-Help/main/enable_smb_and_share.ps1) | iex
+iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/enable_smb_and_share.ps1 | iex
 ```
 
 📝 使用说明
