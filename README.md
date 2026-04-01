@@ -13,10 +13,10 @@
 ---
 
 #### 📺 视频教程
-**光速分享视频：** [iPhone照片视频无线传输到Windows无需任何软件](https://www.youtube.com/@光速分享)  
+**光速分享视频：** [iPhone照片视频无线传输到Windows无需任何软件](https://youtu.be/USNIBEAcWME)  
 *（帮助项目，观看用户专用）*
 
-<a href="https://google.com" target="_blank">
+<a href="https://youtu.be/USNIBEAcWME" target="_blank">
   <img src="https://github.com/user-attachments/assets/e3db959e-48e4-4b24-b1f6-6f78ed93e5a1" width="320" alt="视频封面图" />
 </a>
 
