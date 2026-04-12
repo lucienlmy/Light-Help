@@ -15,6 +15,44 @@
 > 🔗 [访问我的 Bilibili 主页](https://space.bilibili.com/392977516)
 
 ---
+**光速分享视频：** [免费家庭影院搭建教程｜无需NAS，一台电脑实现自动海报墙 + 全设备播放](https://youtu.be/USNIBEAcWME)  
+*（帮助项目，观看用户专用）*
+
+<a href="https://youtu.be/USNIBEAcWME" target="_blank">
+  <img src="https://github.com/user-attachments/assets/0e01384f-1042-4239-b52d-be3b1d7315e4" width="320" alt="视频封面图" />
+</a>
+
+## 💻 快速开始 (Windows + X)
+在 **PowerShell 管理员模式** 中运行以下命令：创建共享文件夹,启用SMB服务
+
+```powershell
+iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/SMB_Share_Tool.ps1 | iex
+```
+
+## 💻 快速开始 (Windows + X)
+在 **PowerShell ** 中运行以下命令：获取用户名和内网IP
+
+```powershell
+iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/GetInfo.ps1 | iex
+```
+
+## 💻 快速开始 (Windows + X)
+在 **PowerShell 管理员模式** 中运行以下命令：强制修改电脑的密码或创建密码
+
+```powershell
+iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/ResetPass.ps1 | iex
+```
+
+## 💻 快速开始 (Windows + X)
+在 **PowerShell 管理员模式** 中运行以下命令：设置开机自动登录,无需输入密码
+
+```powershell
+iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/Win1011AutoLogin.ps1 | iex
+```
+
+
+
+---
 
 #### 📺 视频教程
 **光速分享视频：** [iPhone照片视频无线传输到Windows无需任何软件](https://youtu.be/USNIBEAcWME)  
