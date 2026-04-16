@@ -2,20 +2,20 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README_en.md)
 [![zh-cn](https://img.shields.io/badge/lang-zh--cn-blue.svg)](README.md)
 ---
-# 🚀 Light Speed Share (Light-Help)
-### Helping viewers remotely complete complex PC operations. Please look for the official Light Speed Share channel.
+# 🚀 Lightspeed Sharing (Light-Help)
+### Helping viewers remotely complete complex PC operations. Please look for the official Lightspeed Sharing channel.
 
 ### Please review the code at the top of the project before running. It is open, transparent, and subject to public scrutiny, so you can use it with confidence.
-### This project's scripts are exclusively for use with YouTube Light Speed Share videos.
+### This project's scripts are exclusively for use with YouTube Lightspeed Sharing videos.
 ---
 
-> **Please Subscribe to Light Speed Share**
+> **Please Subscribe to Lightspeed Sharing**
 > I will continue to bring you more convenient and better tech videos.  
 > 🔗 [Visit my YouTube Channel](https://www.youtube.com/@光速分享)  
 > 🔗 [Visit my Bilibili Homepage](https://space.bilibili.com/392977516)
 
 ---
-**Light Speed Share Video:**[Build a Pro Home Theater Without a NAS! Auto-Posters & Streaming on Any Device](https://youtu.be/EPpgy2S_9lg)  
+**Lightspeed Sharing Video:**[Build a Pro Home Theater Without a NAS! Auto-Posters & Streaming on Any Device](https://youtu.be/EPpgy2S_9lg)  
 *(Help project, exclusively for viewers)*
 
 <a href="https://youtu.be/EPpgy2S_9lg" target="_blank">
@@ -52,7 +52,7 @@ iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/Win1011Aut
 ```
 ---
 #### 📺 Video Tutorial
-**Light Speed Share Video:** [Wireless transfer of iPhone photos and videos to Windows without any software](https://youtu.be/USNIBEAcWME)  
+**Lightspeed Sharing Video:** [Wireless transfer of iPhone photos and videos to Windows without any software](https://youtu.be/USNIBEAcWME)  
 *(Help project, exclusively for viewers)*
 
 <a href="https://youtu.be/USNIBEAcWME" target="_blank">
