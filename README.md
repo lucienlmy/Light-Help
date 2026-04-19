@@ -20,7 +20,7 @@
 > **请订阅光速分享**
 > 我会持续为大家带来更方便更好的科技视频  
 > 🔗 [访问我的 YouTube 频道](https://www.youtube.com/@光速分享)  
-> 🔗 [访问我的 Bilibili 主页](https://space.bilibili.com/392977516)
+
 ---
 **光速分享视频：** [一行代码深度清理 Windows！无需安装软件，一键释放巨量系统空间](https://youtu.be/f5Ta_W54GL0)  
 *（帮助项目，观看用户专用）*
