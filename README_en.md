@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square">
+  <img src="https://github.com/Cotton059/Light-Help/actions/workflows/linter.yml/badge.svg">
+  <img src="https://github.com/Cotton059/Light-Help/actions/workflows/powershell-audit.yml/badge.svg">
+  <img src="https://img.shields.io/github/license/Cotton059/Light-Help?style=flat-square&color=blue">
+</p>
+
+---
 # Select Language
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README_en.md)
 [![zh-cn](https://img.shields.io/badge/lang-zh--cn-blue.svg)](README.md)
@@ -8,11 +16,21 @@
 ### Please review the code at the top of the project before running. It is open, transparent, and subject to public scrutiny, so you can use it with confidence.
 ### This project's scripts are exclusively for use with YouTube Lightspeed Sharing videos.
 ---
-
 > **Please Subscribe to Lightspeed Sharing**
 > I will continue to bring you more convenient and better tech videos.  
 > 🔗 [Visit my YouTube Channel](https://www.youtube.com/@光速分享)  
 
+---
+
+## 🚀 Quick Access Tool (Windows + X)
+Run the following command in **PowerShell** to add a Light-Help shortcut to your desktop with one click:
+
+### 🔗 Repository Shortcut
+> **Note:** This command automatically detects your desktop path (supports OneDrive folders) and creates an icon for instant access to this repository.
+
+```powershell
+$s=(New-Object -COM WScript.Shell).CreateShortcut("$([Environment]::GetFolderPath('Desktop'))\Light-Help.url"); $s.TargetPath="https://github.com/Cotton059/Light-Help"; $s.Save()
+```
 ---
 **Lightspeed Sharing Video:**[How to Deep Clean Windows with 1 Line of Code! (No Software Needed)](https://youtu.be/f5Ta_W54GL0)  
 *(Help project, exclusively for viewers)*
