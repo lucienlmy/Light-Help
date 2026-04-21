@@ -1,9 +1,11 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square">
-  <img src="https://github.com/Cotton059/Light-Help/actions/workflows/linter.yml/badge.svg">
-  <img src="https://github.com/Cotton059/Light-Help/actions/workflows/powershell-audit.yml/badge.svg">
-  <img src="https://img.shields.io/github/license/Cotton059/Light-Help?style=flat-square&color=blue">
-</p>
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">
+  <img src="https://github.com/Cotton059/Light-Help/actions/workflows/linter.yml/badge.svg" alt="Linter">
+  <img src="https://github.com/Cotton059/Light-Help/actions/workflows/powershell-audit.yml/badge.svg" alt="Audit">
+  <img src="https://img.shields.io/github/stars/Cotton059/Light-Help?style=flat-square" alt="Stars">
+  <img src="https://img.shields.io/github/forks/Cotton059/Light-Help?style=flat-square" alt="Forks">
+  <img src="https://img.shields.io/github/license/Cotton059/Light-Help?style=flat-square&color=blue" alt="License">
+</div>
 
 ---
 # Select Language
