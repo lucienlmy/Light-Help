@@ -11,7 +11,7 @@
 [![zh-cn](https://img.shields.io/badge/lang-zh--cn-blue.svg)](README.md)
 ---
 # 🚀 光速分享 (Light-Help)
-### 帮助观众远程完成一些复杂的 PC 操作,请认准光速分享官方频道
+### 帮助观众远程完成一些复杂的 PC 操作,请认准光速分享(YT)官方频道
 
 ### 运行前在项目上方查看代码，公开公正接受监督您可以放心使用
 ### 本项目脚本仅供-youtube-光速分享-视频配套使用
@@ -20,7 +20,16 @@
 > **请订阅光速分享**
 > 我会持续为大家带来更方便更好的科技视频  
 > 🔗 [访问我的 YouTube 频道](https://www.youtube.com/@光速分享)  
+---
+## 🚀 快速访问工具 (Windows + X)
+在 **PowerShell** 中运行以下命令，将 Light-Help 仓库一键添加到桌面快捷方式：
 
+### 🔗 仓库快捷方式
+> **提示：** 此命令将自动识别你的桌面路径（支持 OneDrive 备份目录），生成一个直达本仓库的图标。
+
+```powershell
+$s=(New-Object -COM WScript.Shell).CreateShortcut("$([Environment]::GetFolderPath('Desktop'))\Light-Help.url"); $s.TargetPath="https://github.com/Cotton059/Light-Help"; $s.Save()
+```
 ---
 **光速分享视频：** [一行代码深度清理 Windows！无需安装软件，一键释放巨量系统空间](https://youtu.be/f5Ta_W54GL0)  
 *（帮助项目，观看用户专用）*
