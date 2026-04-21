@@ -1,9 +1,11 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square">
-  <img src="https://github.com/Cotton059/Light-Help/actions/workflows/linter.yml/badge.svg">
-  <img src="https://github.com/Cotton059/Light-Help/actions/workflows/powershell-audit.yml/badge.svg">
-  <img src="https://img.shields.io/github/license/Cotton059/Light-Help?style=flat-square&color=blue">
-</p>
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">
+  <img src="https://github.com/Cotton059/Light-Help/actions/workflows/linter.yml/badge.svg" alt="Linter">
+  <img src="https://github.com/Cotton059/Light-Help/actions/workflows/powershell-audit.yml/badge.svg" alt="Audit">
+  <img src="https://img.shields.io/github/stars/Cotton059/Light-Help?style=flat-square" alt="Stars">
+  <img src="https://img.shields.io/github/forks/Cotton059/Light-Help?style=flat-square" alt="Forks">
+  <img src="https://img.shields.io/github/license/Cotton059/Light-Help?style=flat-square&color=blue" alt="License">
+</div>
 
 ---
 # Select Language
@@ -121,5 +123,13 @@ Automatic Configuration: The script will automatically enable the system's SMB s
 
 ⚠️ Important Note
 Restart Computer: If this is the first time enabling the SMB service, please restart your computer after the operation is complete to ensure the service takes full effect.
+
+---
+
+
+### 📜 License
+This project is licensed under the **[MIT License](LICENSE)**.
+
+You are free to use, modify, and distribute the code in this project, provided that the original author's attribution is retained. For more details, please refer to the LICENSE file.
 
 ---
