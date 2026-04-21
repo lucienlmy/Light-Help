@@ -124,3 +124,10 @@ iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/SMB_Share_
 重启电脑：如果是第一次开启 SMB 服务，请在操作完成后重启电脑，以确保服务完全生效。
 
 ---
+
+
+### 📜 License
+本项目采用 **[MIT License](LICENSE)** 许可协议。
+你可以自由地使用、修改和分发本项目代码，但请保留原作者署名。详细条款请参阅 LICENSE 文件。
+
+---
