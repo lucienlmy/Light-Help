@@ -8,15 +8,14 @@
 </div>
 
 ---
-# Select Language
+### 🌐 Select Language
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README_en.md)
 [![zh-cn](https://img.shields.io/badge/lang-zh--cn-blue.svg)](README.md)
 ---
-# 🚀 光速分享 (Light-Help)
-### 帮助观众远程完成一些复杂的 PC 操作,请认准光速分享(YT)官方频道
-
-### 运行前在项目上方查看代码，公开公正接受监督您可以放心使用
-### 本项目脚本仅供-youtube-光速分享-视频配套使用
+### 🛡️ 官方使用须知
+> **认准官方：** 致力于协助您轻松完成复杂的 PC 操作，请认准 **光速分享 (YT)** 官方频道。
+> **安全透明：** 核心代码完全公开透明，接受全网监督。运行前欢迎查阅，请放心使用。
+> **专属配套：** 本项目所有脚本均为 **YouTube - 光速分享** 频道视频教程的专属配套资源。
 ---
 
 
@@ -26,27 +25,38 @@
 >
 > 🔗 [访问我的 YouTube 频道](https://www.youtube.com/@光速分享)
 
+---
+
+### 🚀 运行环境与使用指南
+> **全局说明：** 本页面提供的所有脚本代码均通用。请使用以下任意一种方式唤出终端，随后粘贴代码运行：
+>
+> * **方式一（快捷访问）：** 按下键盘组合键 `Windows + X`，在弹出的菜单中选择 `Windows PowerShell`。
+> * **方式二（系统搜索）：** 点击桌面任务栏的 🔎 搜索图标，输入 `PowerShell` 并点击打开。
+> * **方式三（终极方案）：** 使用本页提供的 **🛡️ PowerShell 管理员快捷方式**。
 
 ---
-## 🚀 快速访问工具 (Windows + X)
-在 **PowerShell** 中运行以下命令，将 Light-Help 仓库一键添加到桌面快捷方式：
 
-### 🔗 仓库快捷方式
+### 🔗 仓库Light-help快捷方式
 > **提示：** 此命令将自动识别你的桌面路径（支持 OneDrive 备份目录），生成一个直达本仓库的图标。
 
 ```powershell
 $s=(New-Object -COM WScript.Shell).CreateShortcut("$([Environment]::GetFolderPath('Desktop'))\Light-Help.url"); $s.TargetPath="https://github.com/Cotton059/Light-Help"; $s.Save()
 ```
+
+### 🛡️ PowerShell 创建管理员快捷方式
+> **提示：** 此脚本将自动识别你的桌面路径并注入底层提权标志，为你生成一个默认以管理员权限运行的 PowerShell 桌面图标。
+```powershell
+
+iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/light/Create_AdminPSShortcut_Tool.ps1 | iex
+```
+
 ---
-**光速分享（YT）视频：** [📺 一行代码搞定！Windows 软件数据一键备份与恢复](https://youtu.be/5bBx3p3nWok)  
-*（帮助项目，观看用户专用）*
+**▶️ 光速分享 (YT) 视频教程：** [一行代码搞定！Windows 软件数据一键备份与恢复](https://youtu.be/5bBx3p3nWok)  
+*（专属帮助项目，观看用户专用）*
 
 <a href="https://youtu.be/5bBx3p3nWok" target="_blank">
-  <img src="images/012-1280-zh.png" width="320" alt="视频封面图" />
+  <img src="images/012-1280-zh.png" width="320" style="border-radius: 8px;" alt="视频封面图" title="点击播放视频" />
 </a>
-
-## 💻 快速开始 (Windows + X) or 桌面🔎搜索（PowerShell）
-在 **PowerShell 管理员模式** 中运行以下命令：
 
 ### 💿 软件数据备份/恢复
 > **提示：** 将备份整个Users目录，包含🆗AppData🆗下载🆗图片🆗文档🆗
@@ -57,15 +67,12 @@ iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/AppBackup_
 
 
 ---
-**光速分享视频：** [一行代码深度清理 Windows！无需安装软件，一键释放巨量系统空间](https://youtu.be/f5Ta_W54GL0)  
-*（帮助项目，观看用户专用）*
+**▶️ 光速分享 (YT) 视频教程：** [一行代码深度清理 Windows！无需安装软件，一键释放巨量系统空间](https://youtu.be/f5Ta_W54GL0)  
+*（专属帮助项目，观看用户专用）*
 
 <a href="https://youtu.be/f5Ta_W54GL0" target="_blank">
-  <img src="https://github.com/user-attachments/assets/0f8dfba7-0979-4405-9e84-a432d2ec9257" width="320" alt="视频封面图" />
+  <img src="images/011-1280-zh.png" width="320" style="border-radius: 8px;" alt="视频封面图" title="点击播放视频" />
 </a>
-
-## 💻 快速开始 (Windows + X)
-在 **PowerShell 管理员模式** 中运行以下命令：运行Light-Help,一键清理命令
 
 ### ☢️ 极致清理版
 > **警告：** 清空所有用户级缓存，可能导致部分云服务软件需要重新同步到本地
@@ -81,68 +88,56 @@ iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/DeepClean_
 ```
 
 ---
-**光速分享视频：** [免费家庭影院搭建教程｜无需NAS，一台电脑实现自动海报墙 + 全设备播放](https://youtu.be/EPpgy2S_9lg)  
-*（帮助项目，观看用户专用）*
+**▶️ 光速分享 (YT) 视频教程：** [免费家庭影院搭建教程｜无需NAS，一台电脑实现自动海报墙 + 全设备播放](https://youtu.be/EPpgy2S_9lg)  
+*（专属帮助项目，观看用户专用）*
 
 <a href="https://youtu.be/EPpgy2S_9lg" target="_blank">
-  <img src="https://github.com/user-attachments/assets/0e01384f-1042-4239-b52d-be3b1d7315e4" width="320" alt="视频封面图" />
+  <img src="images/009-1280-zh.png" width="320" style="border-radius: 8px;" alt="视频封面图" title="点击播放视频" />
 </a>
 
-## 💻 快速开始 (Windows + X)
-在 **PowerShell 管理员模式** 中运行以下命令：创建共享文件夹,启用SMB服务
+### 📁 创建共享文件夹与启用 SMB 服务
+> **提示：** 此操作将帮助您快速配置局域网共享环境，自动创建网络共享文件夹并开启系统底层 SMB 服务，实现多设备间的高效访问与互传。
 
 ```powershell
 iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/SMB_Share_Tool.ps1 | iex
 ```
 
-## 💻 快速开始 (Windows + X)
-在 **PowerShell ** 中运行以下命令：获取用户名和内网IP
+### 📡 获取系统用户名与内网 IP
+> **提示：** 一键提取当前系统的登录用户名与局域网 IPv4 地址，为您进行远程桌面连接、局域网共享或网络调试提供关键参数。
 
 ```powershell
 iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/GetInfo.ps1 | iex
 ```
 
-## 💻 快速开始 (Windows + X)
-在 **PowerShell 管理员模式** 中运行以下命令：强制修改电脑的密码或创建密码
+### 🔑 强制修改或创建电脑密码
+> **提示：** 绕过繁琐的系统设置层级，通过命令直接为您的本地账户快速重置，或创建全新的安全登录密码。
 
 ```powershell
 iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/ResetPass.ps1 | iex
 ```
 
-## 💻 快速开始 (Windows + X)
-在 **PowerShell 管理员模式** 中运行以下命令：设置开机自动登录,无需输入密码
+### 🔓 设置开机自动登录（免密）
+> **提示：** 自动配置底层登录凭据，实现电脑开机跳过锁屏密码界面直接进入桌面，大幅提升个人专属设备的启动效率。
 
 ```powershell
 iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/Win1011AutoLogin.ps1 | iex
 ```
 
-
-
 ---
 
-#### 📺 视频教程
-**光速分享视频：** [iPhone照片视频无线传输到Windows无需任何软件](https://youtu.be/USNIBEAcWME)  
-*（帮助项目，观看用户专用）*
+**▶️ 光速分享 (YT) 视频教程：** [iPhone照片视频无线传输到Windows无需任何软件](https://youtu.be/USNIBEAcWME)  
+*（专属帮助项目，观看用户专用）*
 
 <a href="https://youtu.be/USNIBEAcWME" target="_blank">
-  <img src="https://github.com/user-attachments/assets/e3db959e-48e4-4b24-b1f6-6f78ed93e5a1" width="320" alt="视频封面图" />
+  <img src="images/007-1280-zh.png" width="320" style="border-radius: 8px;" alt="视频封面图" title="点击播放视频" />
 </a>
 
-## 💻 快速开始 (Windows + X)
-在 **PowerShell 管理员模式** 中运行以下命令：
+### 📁 创建共享文件夹与启用 SMB 服务
+> **提示：** 此操作将帮助您快速配置局域网共享环境，自动创建网络共享文件夹并开启系统底层 SMB 服务，实现多设备间的高效访问与互传。
 
 ```powershell
 iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/SMB_Share_Tool.ps1 | iex
 ```
-📝 使用说明
-选择磁盘：根据脚本提示，选择需要作为共享目标的磁盘。
-
-创建文件夹：输入名称并创建你的共享文件夹。
-
-自动配置：脚本会自动为你开启系统的 SMB 服务。
-
-⚠️ 重要提示
-重启电脑：如果是第一次开启 SMB 服务，请在操作完成后重启电脑，以确保服务完全生效。
 
 ---
 

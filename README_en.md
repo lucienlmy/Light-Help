@@ -8,161 +8,155 @@
 </div>
 
 ---
-# Select Language
+### 🌐 Select Language
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README_en.md)
 [![zh-cn](https://img.shields.io/badge/lang-zh--cn-blue.svg)](README.md)
 ---
-# 🚀 Lightspeed Sharing (Light-Help)
-### Helping viewers remotely complete complex PC operations. Please look for the official Lightspeed Sharing channel.
-
-### Please review the code at the top of the project before running. It is open, transparent, and subject to public scrutiny, so you can use it with confidence.
-### This project's scripts are exclusively for use with YouTube Lightspeed Sharing videos.
+### 🛡️ Official Guidelines
+> **Official Channel:** Dedicated to simplifying complex PC tasks. Ensure you are following the official **Lightspeed Sharing (YT)** channel.
+> **Secure & Transparent:** Our core code is 100% open-source and open for community review. Feel free to inspect it before running.
+> **Exclusive Resources:** All scripts in this repository are tailor-made companions for video tutorials on the **YouTube - Lightspeed Sharing** channel.
 ---
 
-
-### 🙋‍♂️ Help Shape This Channel
-> **Please subscribe to Lightspeed Sharing (YT)**
-> **💡 Community Perks:** Unlock the power to vote in my community posts or submit custom service requests. Let everything here be decided by you!
+### 🙋‍♂️ Co-Create the Channel
+> **Subscribe to Lightspeed Sharing (YT)**
+> **💡 Community Engagement:** Vote in community posts or request custom services. Let your needs shape this space.
 >
-> 🔗 [Visit my YouTube Channel](https://www.youtube.com/@光速分享)
-
+> 🔗 [Visit My YouTube Channel](https://www.youtube.com/@光速分享)
 
 ---
 
-## 🚀 Quick Access Tool (Windows + X)
-Run the following command in **PowerShell** to add a Light-Help shortcut to your desktop with one click:
+### 🚀 Environment & Usage Guide
+> **Global Note:** All scripts on this page are universal. Launch the terminal using any of the methods below, then paste the code to run:
+>
+> * **Method 1 (Quick Access):** Press `Windows + X` and select `Windows PowerShell` from the menu.
+> * **Method 2 (System Search):** Click the 🔎 Search icon on the taskbar, type `PowerShell`, and open it.
+> * **Method 3 (Ultimate Solution):** Use the **🛡️ PowerShell Admin Shortcut** provided on this page.
 
-### 🔗 Repository Shortcut
-> **Note:** This command automatically detects your desktop path (supports OneDrive folders) and creates an icon for instant access to this repository.
+---
+
+### 🔗 Light-Help Repo Shortcut
+> **Tip:** This command auto-detects your desktop path (including OneDrive backups) and creates a direct shortcut to this repository.
 
 ```powershell
 $s=(New-Object -COM WScript.Shell).CreateShortcut("$([Environment]::GetFolderPath('Desktop'))\Light-Help.url"); $s.TargetPath="https://github.com/Cotton059/Light-Help"; $s.Save()
 ```
+
+### 🛡️ Create PowerShell Admin Shortcut
+> **Tip:** This script auto-detects your desktop path and injects a low-level elevation flag, creating a PowerShell desktop shortcut that runs as Administrator by default.
+```powershell
+
+iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/light/Create_AdminPSShortcut_Tool.ps1 | iex
+```
+
 ---
-**Lightspeed Sharing Video:** [📺 1-Line Code Backup! Windows App Data Auto-Save & Restore](https://youtu.be/5bBx3p3nWok)  
-*（Support the project, viewer exclusive）*
+**▶️ Lightspeed Sharing (YT) Video Tutorial:** [One Line of Code! Windows App Data 1-Click Backup & Restore](https://youtu.be/5bBx3p3nWok)  
+*(Exclusive companion project for viewers)*
 
 <a href="https://youtu.be/5bBx3p3nWok" target="_blank">
-  <img src="images/012-1280-en.png" width="320" alt="视频封面图" />
+  <img src="images/012-1280-en.png" width="320" style="border-radius: 8px;" alt="视频封面图" title="点击播放视频" />
 </a>
 
-## 💻 Quick Start (Windows + X) or Desktop 🔎 Search (PowerShell)
-Run the following command in PowerShell (Admin):
-
 ### 💿 App Data Backup/Restore
-> **Tip：** Backs up the entire Users directory, including 🆗AppData🆗Downloads🆗Pictures🆗Documents🆗
+> **Tip:** Backs up the entire Users directory, including 🆗AppData🆗Downloads🆗Pictures🆗Documents🆗
 ```powershell
 
 iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/AppBackup_Tool.ps1 | iex
 ```
 
+
 ---
-**Lightspeed Sharing Video:**[How to Deep Clean Windows with 1 Line of Code! (No Software Needed)](https://youtu.be/f5Ta_W54GL0)  
-*(Help project, exclusively for viewers)*
+**▶️ Lightspeed Sharing (YT) Video Tutorial:** [One-Line Deep Windows Cleanup! No Software Needed, Free Up Massive Space](https://youtu.be/f5Ta_W54GL0)  
+*(Exclusive companion project for viewers)*
 
 <a href="https://youtu.be/f5Ta_W54GL0" target="_blank">
-  <img src="https://github.com/user-attachments/assets/33502f93-49fd-4cfc-a3c4-2611f2bd0b4f" width="320" alt="视频封面图" />
+  <img src="images/011-1280-en.png" width="320" style="border-radius: 8px;" alt="视频封面图" title="点击播放视频" />
 </a>
 
-
-## 💻 Quick Start (Windows + X)
-Run the following command in **PowerShell Administrator Mode**:Run Light-Help 1-Click Cleanup Command
-### ☢️ Extreme Edition
-> **WARNING:** Clears all user-level caches. Cloud-based apps may require a full local re-sync.
-
+### ☢️ Extreme Cleanup Edition
+> **Warning:** Clears all user-level caches. Some cloud services may need to re-sync locally.
 ```powershell
+
 iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/DeepClean_Tool.ps1 | iex
 ```
-### 🛡️ v8.0 Balanced Edition
-> **NOTE:** Reclaims space with smart data isolation. Ideal if you prefer stability over "Geek-style" minimalism.
+### 🛡️ v8.0 Balanced Protection Edition
+> **Tip:** Frees up space while offering smart data isolation protection. Use this if you prefer a non-geek style.
 ```powershell
 
 iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/DeepClean_v8.0_Tool.ps1 | iex
 ```
 
 ---
-**Lightspeed Sharing Video:**[Build a Pro Home Theater Without a NAS! Auto-Posters & Streaming on Any Device](https://youtu.be/EPpgy2S_9lg)  
-*(Help project, exclusively for viewers)*
+**▶️ Lightspeed Sharing (YT) Video Tutorial:** [Free Home Theater Setup | No NAS Needed, Auto Poster Wall & Multi-Device Playback on One PC](https://youtu.be/EPpgy2S_9lg)  
+*(Exclusive companion project for viewers)*
 
 <a href="https://youtu.be/EPpgy2S_9lg" target="_blank">
-  <img src="https://github.com/user-attachments/assets/ac237aef-5700-4b87-a8a4-ab16a8c7391e" width="320" alt="视频封面图" />
+  <img src="images/009-1280-en.png" width="320" style="border-radius: 8px;" alt="视频封面图" title="点击播放视频" />
 </a>
 
-
-## 💻 Quick Start (Windows + X)
-Run the following command in **PowerShell Administrator Mode**:Create a shared folder and toggle on SMB
+### 📁 Create Shared Folder & Enable SMB Service
+> **Tip:** Quickly configure your LAN sharing environment. This auto-creates a network shared folder and enables low-level SMB services for efficient cross-device access and file transfer.
 
 ```powershell
 iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/SMB_Share_Tool.ps1 | iex
 ```
 
-## 💻 Quick Start (Windows + X)
-Run the following command in **PowerShell Administrator Mode**:Grab your username and local IP address
+### 📡 Get System Username & Local IP
+> **Tip:** 1-click extract your current login username and LAN IPv4 address, providing key parameters for Remote Desktop, LAN sharing, or network debugging.
 
 ```powershell
 iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/GetInfo.ps1 | iex
 ```
 
-## 💻 Quick Start (Windows + X)
-Run the following command in **PowerShell Administrator Mode**:Set a system password (if you don't have one)
+### 🔑 Force Change or Create PC Password
+> **Tip:** Bypass tedious system settings. Use commands to quickly reset or create a brand-new secure login password for your local account directly.
 
 ```powershell
 iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/ResetPass.ps1 | iex
 ```
 
-## 💻 Quick Start (Windows + X)
-Run the following command in **PowerShell Administrator Mode**:Configure auto-login for a seamless boot experience
+### 🔓 Set Auto-Login (Passwordless)
+> **Tip:** Auto-configure low-level login credentials to skip the lock screen and boot directly to the desktop, greatly boosting startup efficiency for personal devices.
 
 ```powershell
 iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/Win1011AutoLogin.ps1 | iex
 ```
+
 ---
-#### 📺 Video Tutorial
-**Lightspeed Sharing Video:** [Wireless transfer of iPhone photos and videos to Windows without any software](https://youtu.be/USNIBEAcWME)  
-*(Help project, exclusively for viewers)*
+
+**▶️ Lightspeed Sharing (YT) Video Tutorial:** [Wirelessly Transfer iPhone Photos & Videos to Windows Without Any Software](https://youtu.be/USNIBEAcWME)  
+*(Exclusive companion project for viewers)*
 
 <a href="https://youtu.be/USNIBEAcWME" target="_blank">
-  <img src="https://github.com/user-attachments/assets/e3db959e-48e4-4b24-b1f6-6f78ed93e5a1" width="320" alt="Video Cover" />
+  <img src="images/007-1280-en.png" width="320" style="border-radius: 8px;" alt="视频封面图" title="点击播放视频" />
 </a>
 
-## 💻 Quick Start (Windows + X)
-Run the following command in **PowerShell Administrator Mode**:
+### 📁 Create Shared Folder & Enable SMB Service
+> **Tip:** Quickly configure your LAN sharing environment. This auto-creates a network shared folder and enables low-level SMB services for efficient cross-device access and file transfer.
 
 ```powershell
 iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/SMB_Share_Tool.ps1 | iex
 ```
-
-📝 Instructions
-Select Disk: Follow the script prompts to select the disk you want to use as the share target.
-
-Create Folder: Enter a name and create your shared folder.
-
-Automatic Configuration: The script will automatically enable the system's SMB service for you.
-
-⚠️ Important Note
-Restart Computer: If this is the first time enabling the SMB service, please restart your computer after the operation is complete to ensure the service takes full effect.
 
 ---
 
 ## ⚖️ License & Copyright
 
 ### 1. Core License
-This project is open-source under the **[GNU General Public License v3.0 (GPL-3.0)](https://www.gnu.org/licenses/gpl-3.0.html)**.
+This project is open-sourced under the **[GNU General Public License v3.0 (GPL-3.0)](https://www.gnu.org/licenses/gpl-3.0.html)**.
 
-- **User-Friendly**: You are free to run, study, share, and modify this software.
-- **Copyleft (Mandatory Open Source)**: If you modify and distribute the code from this project, your modifications must also be open-sourced under the GPL-3.0 license. This ensures that this project and its derivatives will remain permanently free and transparent, preventing them from being closed-source or commercialized.
+- **User-Friendly:** You are free to run, study, share, and modify this software.
+- **Copyleft (Mandatory Open Source):** If you modify and distribute this code, your modifications must also be open-sourced under GPL-3.0. This ensures the project and its derivatives remain permanently free and transparent, preventing closed-source commercialization.
 
 ### 2. Third-Party Code Compliance
-To ensure functional completeness, this project may contain third-party open-source code (typically stored in the `ThirdParty/` directory).
+For functional completeness, this project may include third-party open-source code (typically stored in the `ThirdParty/` directory).
 - This project strictly complies with the original authors' open-source licenses.
-- **All external code completely retains the original authors' attribution, copyright notices, and original licenses.**
+- **All external code fully retains the original authors' attribution, copyright notices, and original licenses.**
 
 ### 3. Originality Statement & Developer Signature
-The developer reserves the copyright for all independently written scripts and core logic within this project. Under the GPL-3.0 framework, please recognize the official signature:
+The developer retains copyright for all self-written scripts and core logic in this project. Under the GPL-3.0 framework, please recognize the official signature:
 
 > **Author:** Lightspeed Sharing (YT) | **Project:** Cotton059/Light-Help  
 > **Developer:** Lightspeed Sharing (YT) | **Project:** Light-Help (GitHub)
 
----
 
----
