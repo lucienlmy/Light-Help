@@ -49,6 +49,26 @@ $s=(New-Object -COM WScript.Shell).CreateShortcut("$([Environment]::GetFolderPat
 
 iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/light/Create_AdminPSShortcut_Tool.ps1 | iex
 ```
+---
+**▶️ 光速分享 (YT) 视频教程：** [一行代码彻底汉化 GitHub！最快配置方案](https://youtu.be/n7P0SFjFppg)  
+*（专属帮助项目，观看用户专用）*
+
+<a href="https://youtu.be/n7P0SFjFppg" target="_blank">
+  <img src="images/013-1280-zh.png" width="320" style="border-radius: 8px;" alt="视频封面图" title="点击播放视频" />
+</a>
+
+### 🌐 GitHub 沉浸母语版
+> **提示：** 完美GitHub原生布局快速安装chrome官方插件，推荐使用它
+```powershell
+
+iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/light/GitHub-CN-Installer_Tool.ps1 | iex
+```
+### 🐵 篡改猴 (Tampermonkey) 用户专用版
+> **提示：** 安装过篡改猴（Tampermonkey）的用户专用。直接复制下面这条链接到浏览器中打开，即可跳转安装中文插件。脚本作者是 maboloshi/github-chinese
+```powershell
+
+https://github.com/Cotton059/Light-Help/raw/refs/heads/main/ThirdParty/maboloshi_github-chinese/main.user.js
+```
 
 ---
 **▶️ 光速分享 (YT) 视频教程：** [一行代码搞定！Windows 软件数据一键备份与恢复](https://youtu.be/5bBx3p3nWok)  

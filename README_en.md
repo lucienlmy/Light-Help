@@ -50,6 +50,26 @@ iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/light/Crea
 ```
 
 ---
+**▶️ Lightspeed Sharing (YT) Video Tutorial:** [One Line of Code! Completely Translate GitHub! Fastest Configuration](https://youtu.be/n7P0SFjFppg)  
+*(Exclusive companion project for viewers)*
+
+<a href="https://youtu.be/n7P0SFjFppg" target="_blank">
+  <img src="images/013-1280-en.png" width="320" style="border-radius: 8px;" alt="视频封面图" title="点击播放视频" />
+</a>
+
+### 🌐 GitHub Immersive Native Language Edition
+> **Tip:** Quickly installs the official Chrome extension while perfectly retaining the native GitHub layout, highly recommended.
+```powershell
+
+iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/light/GitHub-CN-Installer_Tool.ps1 | iex
+```
+### 🐵 Tampermonkey Edition
+> **Note:** For Tampermonkey users only. Copy and paste the link below into your browser to install the Chinese localization plugin. Script by maboloshi/github-chinese
+```powershell
+
+https://github.com/Cotton059/Light-Help/raw/refs/heads/main/ThirdParty/maboloshi_github-chinese/main.user.js
+```
+---
 **▶️ Lightspeed Sharing (YT) Video Tutorial:** [One Line of Code! Windows App Data 1-Click Backup & Restore](https://youtu.be/5bBx3p3nWok)  
 *(Exclusive companion project for viewers)*
 
